@@ -51,6 +51,18 @@ button:focus-visible {
   z-index: 20;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .wrap {
   display: grid;
   grid-template-columns: minmax(16rem, var(--rail)) minmax(0, 42rem);
@@ -212,9 +224,23 @@ button:focus-visible {
   margin-top: 2.2rem;
 }
 
+.jobs {
+  display: grid;
+  gap: 2rem;
+}
+
 .job {
   display: grid;
   gap: 0.35rem;
+}
+
+.pending {
+  margin: 1rem 0 0;
+  padding: 0.85rem 1rem;
+  border: 1px dashed var(--line);
+  border-radius: 0.9rem;
+  color: var(--ink-muted);
+  font-size: 0.92rem;
 }
 
 .job h3 {
