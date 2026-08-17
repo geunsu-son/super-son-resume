@@ -1,9 +1,34 @@
-# SUPER-SON's Resume
+# 손근수 — 데이터 분석가 이력서
 
-![readme_img](https://github.com/geunsu-son/Streamlit_Portfolio/assets/168807522/c21ebd01-4fd9-4ff3-a7a4-23806321a0fc)
+정적 HTML 사이트입니다. Cloudflare Pages에 올려 공개하는 것을 기준으로 두었습니다.
 
-저를 더 알리고 좋은 사람들과 일하고 싶어 만들게 된 사이트입니다.  
-사이트에서는 제 이력서, 포트폴리오 및 사이드 프로젝트를 확인하실 수 있습니다.  
+## 로컬에서 보기
 
-제 이력서를 읽고 궁금한 점은 사이드바의 이력서 챗봇을 통해 더 자세히 알 수 있습니다. 😃  
-* 챗봇이 답하지 못하는 내용은 물어봐주시면 성실히 답해드리겠습니다!
+```bash
+python3 -m http.server 4173 --directory site
+```
+
+브라우저에서 `http://localhost:4173` 을 엽니다.
+
+## 내용 수정
+
+| 바꾸고 싶은 것 | 파일 |
+|---|---|
+| 소개·경력·연락처 문구 | `site/index.html` |
+| 색·여백·레이아웃 | `site/styles/variables.css`, `site/styles/main.css` |
+| 프로필 사진 | `site/assets/profile_photo_comic.png` |
+
+이력에 없는 성과·수치는 넣지 않습니다.
+
+## Cloudflare Pages 배포
+
+1. [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Workers & Pages** → **Create** → **Pages** → Git 저장소 연결
+2. 빌드 설정
+   - Framework preset: `None`
+   - Build command: 비움
+   - Build output directory: `site`
+3. **Save and Deploy**
+
+이후 `main`(또는 이 브랜치)에 push하면 다시 배포됩니다.
+
+커스텀 도메인은 Pages 프로젝트의 **Custom domains**에서 연결합니다. API 키나 계정 정보는 저장소에 넣지 않습니다.
