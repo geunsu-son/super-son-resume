@@ -6,7 +6,7 @@
     <title>손근수 — 데이터 분석 · 엔지니어링</title>
     <meta
       name="description"
-      content="손근수. 데이터 분석으로 시작해 수집·자동화·데이터 엔지니어링과 AI 활용까지 넓혀 온 이력서입니다."
+      content="손근수. 데이터 분석으로 시작해 병원 데이터 파이프라인, LMS 운영 자동화, AI 에이전트 운영까지 넓혀 온 이력서입니다."
     />
     <meta property="og:title" content="손근수 — 데이터 분석 · 엔지니어링" />
     <meta
@@ -57,29 +57,29 @@
         <section id="intro" class="card" aria-labelledby="intro-title">
           <p class="kicker">01 <span>소개</span></p>
           <h2 id="intro-title" class="lead">
-            데이터 분석으로 시작해, <em>수집·자동화·서비스</em>와 엔지니어링까지 넓혀 온 사람입니다.
+            데이터 분석으로 시작해, <em>파이프라인과 AI 운영</em>까지 넓혀 온 사람입니다.
           </h2>
           <p class="note">
-            퍼플아카데미에서 분석·크롤링·사무자동화와 서비스 런칭을 함께 했고, 리팅랩스에서
-            데이터 엔지니어로 일했습니다. 최근에는 AI를 분석과 엔지니어링에 붙이는 일을 하고 있습니다.
-            숫자만 쌓기보다, 팀이 실제로 덜 수고하고 더 잘 결정하게 만드는 쪽에 관심이 있습니다.
+            퍼플아카데미에서 분석·자동화·서비스 런칭을 했고, 리팅랩스에서 병원 운영 데이터를
+            통합하는 파이프라인을 만들었습니다. 복귀 후에는 LMS 정기 ETL과 추천 정책을 데이터로
+            검증하고, Cursor 에이전트로 반복 업무를 표준화했습니다.
           </p>
           <div class="highlights">
             <article class="highlight">
               <strong>역할이 넓어짐</strong>
-              <p>분석 → 데이터 엔지니어링 → AI를 붙인 분석·엔지니어링</p>
+              <p>분석 → 데이터 엔지니어링 → AI를 붙인 분석·운영</p>
             </article>
             <article class="highlight">
-              <strong>운영을 줄이는 자동화</strong>
-              <p>계정 작업 94%, 레벨테스트 처리 99% 시간 감축</p>
+              <strong>데이터를 흐르게 함</strong>
+              <p>멀티소스 통합 파이프라인, Prefect 오케스트레이션, 매출 정합 검증</p>
             </article>
             <article class="highlight">
-              <strong>서비스로 연결</strong>
-              <p>추천도서, AI 첨삭·발음 피드백, 퍼플잉글리시 런칭</p>
+              <strong>운영을 줄임</strong>
+              <p>계정·테스트 자동화 94~99%, LMS 월간 ETL·진단 배치</p>
             </article>
             <article class="highlight">
-              <strong>통계 전공</strong>
-              <p>숭실대 정보통계보험수리학과, ADsP</p>
+              <strong>정책까지 검증</strong>
+              <p>추천도서 슬롯·Lexile 캡을 데이터로 보고, 서비스를 런칭</p>
             </article>
           </div>
         </section>
@@ -91,12 +91,40 @@
             <article class="job-block">
               <div class="job">
                 <h3>퍼플아카데미 · 파트장</h3>
-                <p class="meta">최근 6개월 · 재직 · AI 활용 분석·엔지니어링</p>
+                <p class="meta">2026.04 – 2026.08 · 재직 · 데이터 분석·엔지니어링 · AI 운영</p>
               </div>
-              <p class="pending">
-                이 구간의 작업 기록은 정리 중입니다. 분석과 엔지니어링에 AI를 함께 쓴 내용이
-                모이면 이 칸을 채우겠습니다.
-              </p>
+              <ul class="work">
+                <li>
+                  <strong>추천도서 2.0 정책 검증</strong>
+                  <p>
+                    주간 추천 슬롯과 Lexile 캡, MG 개방 조건을 퀴즈 관측으로 비교했습니다.
+                    AR 슬롯은 유지하고 Lexile은 캡으로 쓰는 안을 임원·그룹웨어 HTML로 보고했습니다.
+                  </p>
+                </li>
+                <li>
+                  <strong>LMS 월간 ETL · 진단 운영</strong>
+                  <p>
+                    리딩 적재, 종합성취도, 목표 WC, 나의서재를 한 회차 파이프라인으로 묶었습니다.
+                    맞춤 커리큘럼 진단은 어사인부터 결과 수집·결과지 배포까지 배치로 돌렸고,
+                    운영팀이 직접 조회하도록 Streamlit 앱을 만들었습니다.
+                  </p>
+                </li>
+                <li>
+                  <strong>데이터 정합 마이그레이션</strong>
+                  <p>
+                    이반 원생 학습이력 이관, 도서 식별자 오매칭 수정, IXL 스킬 메타 갱신을
+                    preview·승인 후 반영하는 방식으로 운영했습니다.
+                  </p>
+                </li>
+                <li>
+                  <strong>데이터팀 AI 운영 체계</strong>
+                  <p>
+                    Cursor Rules·Skills와 에이전트 라우터로 SQL, ETL, 분석 보고, 커밋/PR을
+                    같은 절차로 돌렸습니다. 저장소 기준 Rules 약 30개, Skills 약 23개,
+                    채팅 세션 약 376건입니다.
+                  </p>
+                </li>
+              </ul>
             </article>
 
             <article class="job-block">
@@ -104,10 +132,31 @@
                 <h3>리팅랩스 · 데이터 엔지니어</h3>
                 <p class="meta">1년 6개월 · 마지막 근무일에 팀장 임명</p>
               </div>
-              <p class="pending">
-                경력기술서 초안을 반영해 파이프라인·운영 업무를 곧 적겠습니다. 지금은 재직 기간과
-                역할만 밝혀 둡니다.
-              </p>
+              <ul class="work">
+                <li>
+                  <strong>멀티소스 통합 파이프라인</strong>
+                  <p>
+                    SCRM, MetaCRM, DentWeb, TCM과 PostgreSQL·MySQL·MSSQL 데이터를 모아
+                    병원·지점별 예약·수납 모델을 표준화했습니다. 수집부터 정제, 적재,
+                    데이터마트, 리포팅까지 한 사이클로 자동화했습니다.
+                  </p>
+                </li>
+                <li>
+                  <strong>Prefect 오케스트레이션</strong>
+                  <p>
+                    일·주·월 워크플로를 의존 관계로 묶고, 병원·기준월·단계별로 부분 실행과
+                    과거 재처리가 되게 했습니다. Work Pool을 나누고 실패·중단 알림을 붙였습니다.
+                  </p>
+                </li>
+                <li>
+                  <strong>매출 정합 검증 · 데이터마트</strong>
+                  <p>
+                    CRM·MSSQL 원천과 PostgreSQL 통합 데이터, 경영 보고 사이 매출 정합을
+                    자동 검증했습니다. 전환율, 상담, 매출, 객단가 KPI용 마트를 만들고
+                    PostgreSQL과 Google Sheets로 리포팅했습니다.
+                  </p>
+                </li>
+              </ul>
             </article>
 
             <article class="job-block">
@@ -185,15 +234,21 @@
           <h3>사용하는 도구</h3>
           <ul class="chips">
             <li>Python</li>
+            <li>pandas</li>
             <li>SQL</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>MSSQL</li>
+            <li>SQLAlchemy</li>
+            <li>Prefect</li>
+            <li>Streamlit</li>
+            <li>Selenium</li>
             <li>Excel</li>
-            <li>PowerPoint</li>
-            <li>데이터 수집</li>
-            <li>데이터 분석</li>
+            <li>Git</li>
           </ul>
           <p class="note">
-            서비스 개발에서는 ChatGPT, Llama 2, Whisper, wav2vec을 조사·도입 테스트에 썼습니다.
-            최근 6개월 AI 활용 업무의 도구 목록은 기록을 정리한 뒤 업데이트하겠습니다.
+            분석·보고에는 HTML 임원 보고서와 Google Sheets를 썼고, AI 업무는 Cursor Rules·Skills로
+            표준화했습니다. 서비스 개발 당시에는 ChatGPT, Llama 2, Whisper, wav2vec도 조사·도입했습니다.
           </p>
         </section>
 
