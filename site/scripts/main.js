@@ -4,11 +4,12 @@ const stored = localStorage.getItem("theme");
 
 if (stored === "light" || stored === "dark") {
   root.dataset.theme = stored;
+} else {
+  root.dataset.theme = "dark";
 }
 
 function currentTheme() {
-  if (root.dataset.theme) return root.dataset.theme;
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return root.dataset.theme === "light" ? "light" : "dark";
 }
 
 function syncToggle() {
