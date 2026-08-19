@@ -243,7 +243,8 @@ button:focus-visible {
 
 .metric strong {
   display: block;
-  font-size: 1.25rem;
+  font-size: clamp(1.02rem, 2.2vw, 1.25rem);
+  line-height: 1.25;
   letter-spacing: -0.03em;
 }
 
