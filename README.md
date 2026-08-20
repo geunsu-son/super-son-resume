@@ -1,4 +1,4 @@
-# 손근수 — 데이터 분석가 이력서
+# 손근수 — Data Engineer · Data Analyst 이력서
 
 정적 HTML 사이트입니다. Cloudflare Pages에 올려 공개하는 것을 기준으로 두었습니다.
 

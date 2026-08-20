@@ -130,6 +130,12 @@ button:focus-visible {
   padding: 2.2rem 0 3.5rem;
 }
 
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -339,6 +345,15 @@ button:focus-visible {
   text-align: center;
 }
 
+.info-card .chips {
+  justify-content: center;
+  margin-top: 0.7rem;
+}
+
+.info-card .chips li {
+  font-size: 0.8rem;
+}
+
 .icon-dot {
   width: 2.6rem;
   height: 2.6rem;
@@ -492,6 +507,58 @@ button:focus-visible {
   border-radius: 999px;
   padding: 0.28rem 0.75rem;
   font-size: 0.82rem;
+  color: var(--ink);
+  text-decoration: none;
+  background: var(--bg-soft);
+}
+
+a.link-chip:hover {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
+  color: var(--accent);
+}
+
+.post-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  flex: 0 0 auto;
+}
+
+.cert-view {
+  padding-bottom: 3rem;
+}
+
+.cert-view .section-head h1 {
+  margin: 0;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  letter-spacing: -0.03em;
+}
+
+.cert-back {
+  margin-left: auto;
+  margin-right: 0.5rem;
+  min-height: 2.2rem;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.88rem;
+}
+
+.cert-figure {
+  margin: 1.25rem 0 0;
+  padding: 0.85rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.cert-figure img {
+  display: block;
+  width: 100%;
+  max-width: 44rem;
+  height: auto;
+  margin: 0 auto;
+  border-radius: var(--radius-sm);
+  background: #fff;
 }
 
 .contact-card {
@@ -583,6 +650,12 @@ button:focus-visible {
   .contact-mail {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .site-header-inner .cert-back {
+    order: 3;
+    width: 100%;
+    margin: 0.35rem 0 0;
   }
 }
 
