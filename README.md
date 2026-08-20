@@ -17,8 +17,9 @@ python3 -m http.server 4173 --directory site
 | 소개·경력·연락처 문구 | `site/index.html` |
 | 색·여백·레이아웃 | `site/styles/variables.css`, `site/styles/main.css` |
 | 프로필 사진 | `site/assets/profile_photo_comic.png` |
+| 이력 원천·참고 문서 | `docs/career/` (`INDEX.md` 참고) |
 
-이력에 없는 성과·수치는 넣지 않습니다.
+이력에 없는 성과·수치는 넣지 않습니다. 공개 문구를 바꿀 때는 `docs/career/` 자료를 근거로 합니다.
 
 ## Cloudflare Pages 배포
 
