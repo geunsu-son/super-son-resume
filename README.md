@@ -1,6 +1,10 @@
 # 손근수 — Data Engineer · Data Analyst 이력서
 
-정적 HTML 사이트입니다. Cloudflare Pages에 올려 공개하는 것을 기준으로 두었습니다.
+정적 HTML 사이트입니다. Cloudflare(Workers & Pages)에 올려 공개했습니다.
+
+**공개 URL:** https://super-son-resume.gnsu0705.workers.dev
+
+도메인을 사지 않고 Cloudflare가 붙인 무료 주소(`*.workers.dev`)를 씁니다. 커스텀 도메인은 선택입니다.
 
 ## 로컬에서 보기
 
@@ -21,15 +25,17 @@ python3 -m http.server 4173 --directory site
 
 이력에 없는 성과·수치는 넣지 않습니다. 공개 문구를 바꿀 때는 `docs/career/` 자료를 근거로 합니다.
 
-## Cloudflare Pages 배포
+## 배포
 
-1. [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Workers & Pages** → **Create** → **Pages** → Git 저장소 연결
+이미 연결된 프로젝트는 `main`에 push하면 다시 배포됩니다.
+
+새로 연결할 때:
+
+1. [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Workers & Pages** → Git 저장소 연결
 2. 빌드 설정
    - Framework preset: `None`
    - Build command: 비움
    - Build output directory: `site`
 3. **Save and Deploy**
 
-이후 `main`(또는 이 브랜치)에 push하면 다시 배포됩니다.
-
-커스텀 도메인은 Pages 프로젝트의 **Custom domains**에서 연결합니다. API 키나 계정 정보는 저장소에 넣지 않습니다.
+커스텀 도메인은 프로젝트의 **Custom domains**에서 연결합니다. API 키나 계정 정보는 저장소에 넣지 않습니다.
