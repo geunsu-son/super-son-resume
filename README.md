@@ -1,10 +1,10 @@
 # 손근수 — Data Engineer · Data Analyst 이력서
 
-정적 HTML 사이트입니다. Cloudflare(Workers & Pages)에 올려 공개했습니다.
+정적 HTML 사이트입니다. Cloudflare Pages에 올려 공개했습니다.
 
-**공개 URL:** https://super-son-resume.gnsu0705.workers.dev
+**공개 URL:** https://super-son-resume.pages.dev/
 
-도메인을 사지 않고 Cloudflare가 붙인 무료 주소(`*.workers.dev`)를 씁니다. 커스텀 도메인은 선택입니다.
+도메인을 사지 않고 Cloudflare가 붙인 무료 주소(`*.pages.dev`)를 씁니다. 커스텀 도메인은 선택입니다.
 
 ## 로컬에서 보기
 
