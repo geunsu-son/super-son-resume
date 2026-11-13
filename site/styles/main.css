@@ -373,6 +373,33 @@ button:focus-visible {
   font-size: 1.05rem;
 }
 
+.project h3:has(.current-role) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 0.45rem;
+  row-gap: 0.28rem;
+}
+
+.project h3 .role-title {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.project h3 .current-role {
+  flex: 0 0 auto;
+  padding: 0.05rem 0.42rem 0.08rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
 .info-card p,
 .project .meta,
 .cert .meta,
@@ -406,9 +433,10 @@ button:focus-visible {
 
 .project-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 0.8rem;
   align-items: center;
+  margin-bottom: 0.7rem;
 }
 
 .tool {
