@@ -367,10 +367,45 @@ button:focus-visible {
 }
 
 .info-card h3,
-.skill-card h3,
-.project h3 {
+.skill-card h3 {
   margin: 0;
   font-size: 1.05rem;
+}
+
+.project h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+}
+
+.project h3:has(.current-role) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 0.45rem;
+  row-gap: 0.28rem;
+}
+
+.project h3 .role-title {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.project h3 .current-role {
+  flex: 0 0 auto;
+  padding: 0.05rem 0.42rem 0.08rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  white-space: nowrap;
 }
 
 .info-card p,
@@ -406,21 +441,26 @@ button:focus-visible {
 
 .project-top {
   display: flex;
-  justify-content: space-between;
-  gap: 0.8rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.4rem;
   align-items: center;
+  margin-top: 0.6rem;
 }
 
 .tool {
+  max-width: 100%;
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 0.2rem 0.7rem;
-  font-size: 0.78rem;
+  background: var(--bg-soft);
+  padding: 0.16rem 0.62rem;
+  font-size: 0.75rem;
+  line-height: 1.45;
   color: var(--ink-muted);
 }
 
 .kicker {
-  margin: 1.1rem 0 0.55rem;
+  margin: 1.05rem 0 0.55rem;
   font-size: 0.75rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -443,6 +483,10 @@ button:focus-visible {
 
 .work strong {
   display: block;
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.45;
 }
 
 .work p {
